@@ -1,0 +1,2 @@
+deploy_to: /path/to/your/deployment/directory
+symfony_php_path: php

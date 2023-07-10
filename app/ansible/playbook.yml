@@ -1,0 +1,38 @@
+- hosts: php
+  remote_user: dylan
+  roles:
+    - role: installation
+      tags: [check]
+
+    - role: common
+      tags: [common]
+
+    - role: php8
+      tags: [php]
+
+  
+    - role: composer
+      tags: [composer]
+
+    - role: symfony-cli
+      tags: [cli]
+
+   
+
+    - role: clone-project
+      tags: [cloning]
+
+
+
+    - role: mariadb
+      tags: [mariadb]
+
+
+
+    - role: run
+      tags: [run]
+
+
+    - role: apache
+
+      tags: [apache]
